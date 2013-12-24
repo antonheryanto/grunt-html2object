@@ -1,0 +1,39 @@
+<div class="page-header">
+  <button class="btn btn-default pull-right" id="back">Back</button>
+  <h2>Manage Course</h2>
+</div>
+<form class="form-horizontal" id="course-form">
+  <input type="hidden" name="id" value="{id}" />
+  <div class="form-group">
+    <label for="code" class="col-md-2">Code</label>
+    <div class="col-md-10">
+      <input class="form-control" id="code" name="code" value="{code}" required/>
+    </div>  
+  </div>
+  <div class="form-group">
+    <label for="name" class="col-md-2">Name</label>
+    <div class="col-md-10">
+      <input class="form-control" id="name" name="name" value="{name}" required/>
+    </div>  
+  </div>
+  <div class="form-group">
+    <label for="description" class="col-md-2">Description</label>
+    <div class="col-md-10">
+      <textarea class="form-control" id="description" name="description">{description}</textarea>
+    </div>  
+  </div>
+  <div class="form-group">
+    <label for="faculty" class="col-md-2">Faculty</label>
+    <div class="col-md-10">
+      <select class="form-control" id="faculty" name="faculty">
+        <option>Please choose</option>
+      </select>
+    </div>  
+  </div>
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+      <button class="btn btn-primary">Save</button>
+    </div>
+  </div>
+</form>
+
