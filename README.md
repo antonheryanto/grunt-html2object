@@ -85,5 +85,7 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-v0.1.1 Fix missing semicolon
+
 v0.1.0 Initial Release, support basic convertion from html to javascript object
+
+v0.1.1 Fix missing semicolon
