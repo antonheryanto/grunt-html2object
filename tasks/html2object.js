@@ -49,7 +49,7 @@ module.exports = function(grunt) {
       }).join('\n');
 
       // Handle options.
-      src = '(function($){\n' + src + '\n})(' + target + ')';
+      src = '(function($){\n' + src + '\n})(' + target + ');';
 
       // Write the destination file.
       grunt.file.write(f.dest, grunt.util.normalizelf(src));
