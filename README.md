@@ -86,6 +86,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
-v0.1.0 Initial Release, support basic convertion from html to javascript object
+v0.1.2 Log html minifier exception, remove htmlmin option removeAttributeQuotes
 
 v0.1.1 Fix missing semicolon
+
+v0.1.0 Initial Release, support basic convertion from html to javascript object

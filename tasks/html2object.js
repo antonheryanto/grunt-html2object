@@ -20,7 +20,6 @@ module.exports = function(grunt) {
       htmlmin: {
         collapseBooleanAttributes: true,
         collapseWhitespace: true,
-        removeAttributeQuotes: true,
         removeComments: true,
         removeEmptyAttributes: true,
         removeRedundantAttributes: true,
@@ -44,8 +43,14 @@ module.exports = function(grunt) {
       }).map(function(filepath) {
         counter++;
         // Read file source.
-        var content = grunt.file.read(filepath).replace(/'/g,"\\'");
-        return "$['" + filepath + "']='" + minify(content, options.htmlmin) + "';";
+        var raw_content = grunt.file.read(filepath).replace(/'/g,"\\'"),
+            content = '';
+        try { 
+          content = minify(content, options.htmlmin);
+        } catch(e) {
+          grunt.log.writeln(e + ' at ' + filepath);
+        }
+        return "$['" + filepath + "']='" + content + "';";
       }).join('\n');
 
       // Handle options.
