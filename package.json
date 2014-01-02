@@ -1,7 +1,7 @@
 {
   "name": "grunt-html2object",
   "description": "Convert HTML into Javascript Object and used directly in Application",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/antonheryanto/grunt-html2object",
   "author": {
     "name": "Anton Heryanto",

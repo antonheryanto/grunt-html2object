@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         var raw_content = grunt.file.read(filepath).replace(/'/g,"\\'"),
             content = '';
         try { 
-          content = minify(content, options.htmlmin);
+          content = minify(raw_content, options.htmlmin);
         } catch(e) {
           grunt.log.writeln(e + ' at ' + filepath);
         }

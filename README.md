@@ -86,6 +86,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+v0.1.3 Fix minifier variable and fix test
+
 v0.1.2 Log html minifier exception, remove htmlmin option removeAttributeQuotes
 
 v0.1.1 Fix missing semicolon
