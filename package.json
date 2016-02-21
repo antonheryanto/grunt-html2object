@@ -34,10 +34,13 @@
     "grunt": "~0.4.2"
   },
   "peerDependencies": {
-    "grunt": "~0.4.2"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
-    "gruntplugin", "htmlmin", "html", "js object"
+    "gruntplugin",
+    "htmlmin",
+    "html",
+    "js object"
   ],
   "dependencies": {
     "html-minifier": "~0.5.4"
